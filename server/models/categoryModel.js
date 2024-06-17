@@ -10,8 +10,8 @@ const category = new Schema({
         required: true
     }
 })
-mongoose.model('category', Category)
-export default category
+const CategoryModel =mongoose.model('Category', category)
+export default CategoryModel
 
 /*Everything in Mongoose starts with a Schema. Each schema maps to a MongoDB collection 
 and defines the shape of the documents within that collection.*/

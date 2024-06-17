@@ -1,12 +1,15 @@
 import express from 'express'
 import 'dotenv/config'
 import mongoose from 'mongoose'
+import categoryRouter from './routes/categoryRoute.js'
 
 
 const PORT =process.env.PORT ||3000
 const MONGO_URI =process.env.MONGO_URI
 
 const app = express()
+
+app.use('/api', categoryRouter)
 
 
 
