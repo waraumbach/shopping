@@ -1,4 +1,5 @@
 import CategoryModel from "../models/categoryModel.js"
+import mongoose from "mongoose"
 
 const getCategories = async (req,res)=>{
     //we want to get all the categories
