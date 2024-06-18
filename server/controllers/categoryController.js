@@ -11,7 +11,7 @@ const getCategories = async (req,res)=>{
     try{
         const categories = await CategoryModel.find()
         //if they no categories (=fault)we managed return err 
-        //option1 shows on postman [] = empty (true value)
+        //option1 shows on postman [] = empty (true)
         /*if(!categories){
             return res.status(500).json({error:'No categories'})
         }*/
